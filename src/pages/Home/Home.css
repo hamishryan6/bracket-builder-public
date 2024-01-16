@@ -1,0 +1,27 @@
+@media screen {
+    .home__main {
+        gap: 32px;
+        padding-top: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-large {
+        height: 64px;
+        object-fit: contain;
+    }
+}
+
+@media (width < 704px) {
+    .logo-large {
+        height: 32px;
+        object-fit: contain;
+    }
+}
+
+@media (width < 516px) {
+    .logo-large {
+        height: 24px;
+        object-fit: contain;
+    }
+}

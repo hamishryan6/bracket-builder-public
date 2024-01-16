@@ -1,0 +1,24 @@
+.progressBar__main {
+    display: flex;
+    gap: 4px;
+}
+
+.step-current, .step-complete, .step-future {
+    height: 4px;
+    border-radius: 4px;
+}
+
+.step-current {
+    width: 48px;
+    background-color: #781FFF;
+}
+
+.step-complete {
+    width: 16px;
+    background-color: #781FFF;
+}
+
+.step-future {
+    width: 16px;
+    background-color: rgba(249, 245, 255, 0.40);
+}

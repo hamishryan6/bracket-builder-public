@@ -1,0 +1,94 @@
+@media screen {
+    .mybracket__header {
+        display: flex;
+        flex-direction: column;
+        gap: var(--xl-gap);
+        align-items: center;
+    }
+
+    .mybracket__container {
+        gap: 84px;
+    }
+
+    .mybracket__titleblock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--medium-gap);
+    }
+
+    .mybracket__rounds {
+        display: flex;
+        flex-direction: column;
+        gap: var(--medium-gap);
+        align-items: center;
+    }
+
+    .roundcontainer {
+        display: flex;
+        gap: var(--small-gap);
+    }
+
+    .round,
+    .game {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: var(--medium-font-size);
+        color: rgba(255, 255, 255, 0.60);
+        text-align: center;
+    }
+
+    .round:hover,
+    .game:hover {
+        background-color: rgba(249, 245, 255, 0.08);
+    }
+
+    .round-active,
+    .game-active {
+        border-radius: 8px;
+        border: 1px solid #781FFF;
+        background-color: rgba(120, 31, 255, 0.40);
+    }
+
+    .round-active:hover,
+    .game-active:hover {
+        background-color: rgba(120, 31, 255, 0.40);
+    }
+
+    .round-active,
+    .game-active {
+        font-weight: 600;
+        color: #FFF
+    }
+
+    .icon__trophy {
+        fill: rgba(255, 255, 255, 0.60);
+        width: 1em;
+    }
+
+    .round-active>.icon__trophy {
+        fill: #FFF;
+    }
+}
+
+@media (width < 1132px) {
+
+    .round,
+    .game {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (width < 516px) {
+
+    .content__container {
+        padding-inline: 24px;
+    }
+
+}

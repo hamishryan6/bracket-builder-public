@@ -1,0 +1,149 @@
+@media screen {
+    .teamcard__main {
+        display: flex;
+        padding: 20px 28px;
+        align-items: center;
+        gap: 8px;
+
+        border-radius: 8px;
+        border: 1px solid rgba(234, 219, 255, 0.12);
+        background-color: #100029;
+        position: relative;
+    }
+
+    .teamcard__main>p {
+        font-size: var(--medium-font-size);
+    }
+
+    .teamcard__main-empty>p {
+        color: rgba(255, 255, 255, 0.2);
+        width: 40px;
+    }
+
+    .teamcard__number {
+        width: 16px;
+        text-align: left;
+    }
+
+    .teamcard__name {
+        flex: 1;
+    }
+
+    .icon__xmark {
+        width: 12px;
+        fill: rgba(255, 255, 255, 0.6);
+    }
+
+    .teamcard__main>a {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        right: 8px;
+        margin-block: auto;
+    }
+
+    .teamcard__main>a:hover {
+        background-color: rgba(255, 255, 255, 0.12);
+    }
+
+    .teamcard__main>a:hover>.icon__xmark {
+        fill: #FFF;
+    }
+
+    .teamcard__main-condensed {
+        width: 54px;
+        max-width: 54px;
+        height: 54px;
+        max-height: 54px;
+        min-width: unset;
+
+        padding: 0;
+    }
+
+    .teamcard__main-condensed-filled {
+        align-items: center;
+        justify-content: center;
+        min-width: unset;
+        width: 54px;
+        max-width: 54px;
+        height: 54px;
+        max-height: 54px;
+        margin-block: 9px;
+        padding: 0;
+    }
+
+    .teamcard__main-condensed-filled>p {
+        text-align: center;
+    }
+
+    .teamcard__main-condensed-filled>.teamcard__name {
+        display: none;
+    }
+
+    .teamcard__main-tbd>p {
+        color: rgba(255, 255, 255, 0.60);
+        font-style: italic;
+        text-align: center;
+    }
+
+    .teamcard__main-win {
+        border: 1px solid rgba(234, 219, 255, 0.64);
+        background: linear-gradient(0deg, rgba(237, 224, 255, 0.16) 0%, rgba(237, 224, 255, 0.16) 100%), #100029;
+    }
+
+    .teamcard__main-loss {
+        opacity: 0.4;
+    }
+
+    .teamcard__score {
+        font-weight: 800;
+    }
+
+    .matchup__main>.teamcard__main {
+        border: none;
+    }
+
+    .matchup__main>.teamcard__main:first-child {
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .matchup__main>.teamcard__main:last-child {
+        border-radius: 0px 0px 8px 8px;
+    }
+
+
+    /* Drag Styling */
+
+    .teamcard__main-draggable {
+        cursor: grab;
+        cursor: -moz-grab;
+        cursor: -webkit-grab;
+    }
+
+    .teamcard__main-draggable:active {
+        cursor: -webkit-grabbing !important;
+        cursor: -moz-grabbing !important;
+        cursor: grabbing !important;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    .teamcard__main-dropzone {
+        border: 1px solid rgba(234, 219, 255, 0.4);
+        background-color: rgba(234, 219, 255, 0.08);
+    }
+
+    .teamcard__main-ghost {
+        opacity: 0.4
+    }
+}
+
+@media (width < 1132px) {
+    .teamcard__main {
+        padding: 16px 20px;
+    }
+}

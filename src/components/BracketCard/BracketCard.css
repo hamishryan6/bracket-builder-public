@@ -1,0 +1,100 @@
+.bracketcard__main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-gap);
+    position: relative;
+    cursor: pointer;
+
+    padding: 20px 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(234, 219, 255, 0.20);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.04) 100%), #100029;
+}
+
+.bracketcard__main:hover {
+    background-color: rgba(234, 219, 255, 0.04);
+}
+
+.bracketcard__main:active {
+    opacity: 0.6
+}
+
+.bracketcard__main>p {
+    opacity: 0.6;
+}
+
+.bracketcard__titleblock {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bracketcard__title {
+    font-size: var(--large-font-size);
+    font-weight: 600;
+    letter-spacing: calc(1em * -0.04);
+}
+
+.bracketcard__detail {
+    font-weight: 500;
+    letter-spacing: calc(1em * -0.04);
+}
+
+.bracketcard__actions {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    padding: 16px 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+}
+
+.bracketcard__action {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    position: relative;
+}
+
+.bracketcard__action:hover {
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.bracketcard__action:hover>.icon__bracketcard-action {
+    fill: #FFF
+}
+
+.icon__bracketcard-action {
+    width: 16px;
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+.bracketcard__action-tooltip {
+    display: none;
+    position: absolute;
+    left: 40px;
+    color: #FFF;
+    font-size: var(--small-font-size);
+
+    background-color: #100029;
+    padding: 8px 16px;
+    border: 1px solid rgba(234, 219, 255, 0.08);
+    border-radius: 8px;
+    box-shadow: 0px 2px 12px 0px rgba(16, 0, 41, 0.16);
+}
+
+.bracketcard__action:hover>.bracketcard__action-tooltip {
+    display: block;
+}
+
+.bracketcard__action:active {
+    opacity: 0.6;
+}

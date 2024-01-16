@@ -1,0 +1,26 @@
+.modal__inputgrid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium-gap);
+}
+
+.modal__input__pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--medium-gap);
+    align-items: flex-start;
+}
+
+.modal__button-stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--small-gap);
+}
+
+.modal__button-stack>button {
+    flex: 1
+}
+
+.modal__button-stack>.button-secondary {
+    border: none;
+}

@@ -1,0 +1,201 @@
+@media screen {
+
+    :root {
+        --bracketline-overlap: 33px
+    }
+
+    .mobilebracket__main-8,
+    .mobilebracket__main-4 {
+        display: none;
+    }
+
+    .bracket__main-8 {
+        display: grid;
+        grid-template-columns: 1fr 36px auto 36px auto 36px auto 36px 1fr;
+    }
+
+    .bracket__main-8.currentround-3 {
+        grid-template-columns: 1fr 36px auto 36px auto 36px auto 36px 1fr;
+    }
+
+    .bracket__main-8.currentround-2 {
+        grid-template-columns: auto 36px 1fr 36px auto 36px 1fr 36px auto;
+    }
+
+    .bracket__main-8.currentround-1 {
+        grid-template-columns: auto 36px auto 36px 1fr 36px auto 36px auto;
+    }
+
+    .bracket__main-4 {
+        display: grid;
+        grid-template-columns: 1fr 36px auto 36px 1fr;
+    }
+
+    .bracket__main-4.currentround-2 {
+        grid-template-columns: 1fr 36px auto 36px 1fr;
+    }
+
+    .bracket__main-4.currentround-1 {
+        grid-template-columns: auto 36px 1fr 36px auto;
+    }
+
+    .bracket__round3 {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .bracket__round2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bracket__round1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bracket__round1>.teamcard__main {
+        flex: 1
+    }
+
+    .bracket__round3-gap {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 48px;
+        flex: 1;
+    }
+
+    .bracket__round3-gap>.bracketlines__container {
+        flex: 1;
+        margin-block: 66px;
+    }
+
+    .bracket__round2-gap {
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+
+    .bracket__main-4>.bracket__round1-gap {
+        grid-template-rows: 1fr;
+    }
+}
+
+@media (width < 1132px) {
+
+    :root {
+        --bracketline-overlap: 29px
+    }
+
+    .bracket__round3-gap>.bracketlines__container {
+        margin-block: 54px;
+    }
+
+}
+
+@media (width < 944px) {
+
+    .bracket__main-4,
+    .bracket__main-8 {
+        display: none;
+    }
+
+    .mobilebracket__main-8,
+    .mobilebracket__main-4 {
+        display: grid;
+    }
+
+}
+
+
+/* MOBILE BRACKET */
+
+@media screen {
+
+    .mobilebracket__main-8 {
+        grid-template-columns: 1fr 36px auto 36px auto;
+    }
+
+    .mobilebracket__main-8.currentround-3 {
+        grid-template-columns: 1fr 36px auto 36px auto;
+    }
+
+    .mobilebracket__main-8.currentround-2 {
+        grid-template-columns: auto 36px 1fr 36px auto;
+    }
+
+    .mobilebracket__main-8.currentround-1 {
+        grid-template-columns: auto 36px auto 36px 1fr;
+    }
+
+    .mobilebracket__main-4 {
+        grid-template-columns: 1fr 36px auto;
+    }
+
+    .mobilebracket__main-4.currentround-2 {
+        grid-template-columns: 1fr 36px auto;
+    }
+
+    .mobilebracket__main-4.currentround-1 {
+        grid-template-columns: auto 36px 1fr;
+    }
+
+    .mobilebracket__main-4.currentround-2>.mobilebracket__round2 {
+        align-items: flex-start;
+    }
+
+    .mobilebracket__main-4>.mobilebracket__round2-gap>.bracketlines__container {
+        flex: 1;
+        margin-block: 54px;
+    }
+
+    .mobilebracket__round3 {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .mobilebracket__round3-gap {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .mobilebracket__round3-gap>.bracketlines__container {
+        flex: 1;
+        margin-block: 54px;
+    }
+
+    .mobilebracket__round2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .mobilebracket__round2-gap {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .mobilebracket__round1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mobilebracket__round1>.teamcard__main {
+        flex: 1
+    }
+
+    .mobilebracket__round2-gap>.bracketlines__container {
+        flex: 1;
+        margin-block: 132px;
+    }
+}
+
+@media (width < 516px) {}

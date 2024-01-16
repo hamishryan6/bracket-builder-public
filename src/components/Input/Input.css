@@ -1,0 +1,48 @@
+.input__container {
+    border-radius: 8px;
+    border: 1px solid rgba(234, 219, 255, 0.20);
+    background-color: rgba(255, 255, 255, 0.08);
+    display: flex;
+    padding: 0px;
+    align-items: center;
+}
+
+.input__container-withbutton {
+    padding-inline: 24px 12px;
+}
+
+.input__container-disabled {
+    opacity: 0.4;
+}
+
+.input__container-disabled>form>.input__button__container>button {
+    background-color: rgba(120, 31, 255, 0.40);
+    cursor: default;
+}
+
+input {
+    font-weight: 400;
+    color: #FFF;
+    font-size: var(--small-font-size);
+    line-height: 100%;
+}
+
+.input {
+    padding: 12px 20px;
+    flex: 1;
+    width: 100%;
+}
+
+.input__container-withbutton>.input {
+    padding-block: 12px;
+}
+
+.input__prefix {
+    width: auto;
+    padding-right: 8px;
+}
+
+.input__button__container {
+    padding-block: 12px;
+    width: auto;
+}
